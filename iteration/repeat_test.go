@@ -22,7 +22,17 @@ func TestRepeat(t *testing.T) {
 			t.Errorf("expected %q but got %q", expected, repeated)
 		}
 	})
+}
 
+func TestStringRepeat(t *testing.T) {
+	t.Run("Repeat `test` 10 times", func(t *testing.T) {
+		repeated := StringRepeat("test", 10)
+		expected := "testtesttesttesttesttesttesttesttesttest"
+
+		if StringEqual(repeated, expected) != true {
+			t.Errorf("expected %q but got %q", expected, repeated)
+		}
+	})
 }
 
 func BenchmarkRepeat(b *testing.B) {
