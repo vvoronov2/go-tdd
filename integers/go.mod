@@ -1,3 +1,3 @@
-module github.com/vvoronov2/integers
+module integers
 
 go 1.19

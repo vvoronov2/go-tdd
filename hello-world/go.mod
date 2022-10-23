@@ -1,3 +1,3 @@
-module github.com/vvoronov2/go-tdd/hello-world
+module hello
 
 go 1.19
